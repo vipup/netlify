@@ -58,6 +58,10 @@ var App = function App() {
   , {
     app: _CON__WEBPACK_IMPORTED_MODULE_4__["APP"],
     url: _CON__WEBPACK_IMPORTED_MODULE_4__["ES_URL"],
+    headers: {
+      secret: 'reactivesearch-is-awesome',
+      'x-Xsrf-token': window.XSRF_TOKEN
+    },
     theme: {
       colors: {
         textColor: "#424242",
@@ -72,26 +76,26 @@ var App = function App() {
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Navbar__WEBPACK_IMPORTED_MODULE_5__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 49
+      lineNumber: 53
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: wrapper,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 50
+      lineNumber: 54
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Filters__WEBPACK_IMPORTED_MODULE_7__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 51
+      lineNumber: 55
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Results__WEBPACK_IMPORTED_MODULE_6__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 52
+      lineNumber: 56
     },
     __self: this
   })));
@@ -575,5 +579,5 @@ module.exports = __webpack_require__(/*! /home/west/git/ReactiveSearch/src/index
 
 /***/ })
 
-},[[0,"runtime-main",1]]]);
+},[[0,"runtime-main",0]]]);
 //# sourceMappingURL=main.chunk.js.map
