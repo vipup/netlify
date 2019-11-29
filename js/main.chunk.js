@@ -114,7 +114,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "APP", function() { return APP; });
 //export const URL = "https://scalr.api.appbase.io";
 //export const ES_URL = "http://127.0.0.1:9200/";
-var ES_URL = "https://mail.blky.eu/ze7eN/es/";
+var ES_URL = "https://mail.blky.eu/ze7eN/es/?csrf=${xsrftoken}";
 var APP = "new_book_search"; //export const ES_URL = "http://e530c:9200/";
 //export const APP = "new-book-search";
 //export const CRED = "vrTi58e8o:04540063-5d81-4fb1-9969-a52d29892995";
@@ -575,5 +575,5 @@ module.exports = __webpack_require__(/*! /home/west/git/ReactiveSearch/src/index
 
 /***/ })
 
-},[[0,"runtime-main",0]]]);
+},[[0,"runtime-main",1]]]);
 //# sourceMappingURL=main.chunk.js.map
