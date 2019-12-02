@@ -59,57 +59,93 @@ var App = function App() {
 
   if (!window.XSRF_TOKEN) {
     alert("running on localhost ENV! no some sec-stuffs are required!");
+    return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_appbaseio_reactivesearch__WEBPACK_IMPORTED_MODULE_3__["ReactiveBase"], {
+      app: _CON__WEBPACK_IMPORTED_MODULE_4__["APP"],
+      url: _CON__WEBPACK_IMPORTED_MODULE_4__["ES_URL"],
+      theme: {
+        colors: {
+          textColor: "#624222",
+          primaryColor: "#0c8"
+        }
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 42
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Navbar__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 52
+      },
+      __self: this
+    }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+      className: wrapper,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 53
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Filters__WEBPACK_IMPORTED_MODULE_7__["default"], {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 54
+      },
+      __self: this
+    }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Results__WEBPACK_IMPORTED_MODULE_6__["default"], {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 55
+      },
+      __self: this
+    })));
   } else {
-    ES_URL = 'https://mail.blky.eu/ze7eN/es/';
-    XSRF = {
-      secret: 'reactivesearch-is-awesome',
-      'x-Xsrf-token': window.XSRF_TOKEN
-    };
-    XSRF_HEADERS = ES_URL.indexOf("localhost") > 0 || ES_URL.indexOf("127.0.0.1") > 0 ? {} : XSRF;
+    return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_appbaseio_reactivesearch__WEBPACK_IMPORTED_MODULE_3__["ReactiveBase"] // credentials={CRED}
+    , {
+      app: _CON__WEBPACK_IMPORTED_MODULE_4__["APP"],
+      url: 'https://mail.blky.eu/ze7eN/es/',
+      headers: {
+        secret: 'reactivesearch-is-awesome',
+        'x-Xsrf-token': window.XSRF_TOKEN
+      },
+      theme: {
+        colors: {
+          textColor: "#224262",
+          primaryColor: "#08c"
+        }
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 61
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Navbar__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 76
+      },
+      __self: this
+    }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+      className: wrapper,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 77
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Filters__WEBPACK_IMPORTED_MODULE_7__["default"], {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 78
+      },
+      __self: this
+    }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Results__WEBPACK_IMPORTED_MODULE_6__["default"], {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 79
+      },
+      __self: this
+    })));
   }
-
-  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_appbaseio_reactivesearch__WEBPACK_IMPORTED_MODULE_3__["ReactiveBase"] // credentials={CRED}
-  , {
-    app: _CON__WEBPACK_IMPORTED_MODULE_4__["APP"],
-    url: _CON__WEBPACK_IMPORTED_MODULE_4__["ES_URL"],
-    headers: _CON__WEBPACK_IMPORTED_MODULE_4__["XSRF_HEADERS"],
-    theme: {
-      colors: {
-        textColor: "#224262",
-        primaryColor: "#08c"
-      }
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 50
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Navbar__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 62
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: wrapper,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 63
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Filters__WEBPACK_IMPORTED_MODULE_7__["default"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 64
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Results__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 65
-    },
-    __self: this
-  })));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (App);
@@ -120,26 +156,21 @@ var App = function App() {
 /*!********************!*\
   !*** ./src/CON.js ***!
   \********************/
-/*! exports provided: ES_URL, APP, XSRF, XSRF_HEADERS */
+/*! exports provided: APP, ES_URL */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ES_URL", function() { return ES_URL; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "APP", function() { return APP; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "XSRF", function() { return XSRF; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "XSRF_HEADERS", function() { return XSRF_HEADERS; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ES_URL", function() { return ES_URL; });
 //export const URL = "https://scalr.api.appbase.io";
 //import {ReactiveBase} from "@appbaseio/reactivesearch";
 //import React from "react";
+var APP = "new_book_search";
 var ES_URL = "http://127.0.0.1:9200/"; //export const ES_URL = "http://e530c:9200/";
 //export const ES_URL = 'https://mail.blky.eu/ze7eN/es/';
-
-var APP = "new_book_search";
-var XSRF = {
-  'TODO': 'TODO'
-};
-var XSRF_HEADERS;
+//export let XSRF = {'TODO':'TODO'};
+//export let XSRF_HEADERS;
 
 /***/ }),
 
