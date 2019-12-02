@@ -44,6 +44,7 @@ function _templateObject() {
 
 
  // CRED,
+//import {APP, ES_URL, XSRF_HEADERS} from "./CON";
 
 
 
@@ -54,48 +55,58 @@ Object(emotion__WEBPACK_IMPORTED_MODULE_2__["injectGlobal"])(_templateObject());
 var wrapper = Object(emotion__WEBPACK_IMPORTED_MODULE_2__["css"])(_templateObject2());
 
 var App = function App() {
+  console.log("window.XSRF_TOKEN::" + window.XSRF_TOKEN);
+
+  if (!window.XSRF_TOKEN) {
+    alert("running on localhost ENV! no some sec-stuffs are required!");
+  } else {
+    ES_URL = 'https://mail.blky.eu/ze7eN/es/';
+    XSRF = {
+      secret: 'reactivesearch-is-awesome',
+      'x-Xsrf-token': window.XSRF_TOKEN
+    };
+    XSRF_HEADERS = ES_URL.indexOf("localhost") > 0 || ES_URL.indexOf("127.0.0.1") > 0 ? {} : XSRF;
+  }
+
   return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_appbaseio_reactivesearch__WEBPACK_IMPORTED_MODULE_3__["ReactiveBase"] // credentials={CRED}
   , {
     app: _CON__WEBPACK_IMPORTED_MODULE_4__["APP"],
     url: _CON__WEBPACK_IMPORTED_MODULE_4__["ES_URL"],
-    headers: {
-      secret: 'reactivesearch-is-awesome',
-      'x-Xsrf-token': window.XSRF_TOKEN
-    },
+    headers: _CON__WEBPACK_IMPORTED_MODULE_4__["XSRF_HEADERS"],
     theme: {
       colors: {
-        textColor: "#424242",
+        textColor: "#224262",
         primaryColor: "#08c"
       }
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38
+      lineNumber: 50
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Navbar__WEBPACK_IMPORTED_MODULE_5__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 53
+      lineNumber: 62
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: wrapper,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 54
+      lineNumber: 63
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Filters__WEBPACK_IMPORTED_MODULE_7__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 55
+      lineNumber: 64
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Results__WEBPACK_IMPORTED_MODULE_6__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 56
+      lineNumber: 65
     },
     __self: this
   })));
@@ -109,20 +120,26 @@ var App = function App() {
 /*!********************!*\
   !*** ./src/CON.js ***!
   \********************/
-/*! exports provided: ES_URL, APP */
+/*! exports provided: ES_URL, APP, XSRF, XSRF_HEADERS */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ES_URL", function() { return ES_URL; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "APP", function() { return APP; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "XSRF", function() { return XSRF; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "XSRF_HEADERS", function() { return XSRF_HEADERS; });
 //export const URL = "https://scalr.api.appbase.io";
-//export const ES_URL = "http://127.0.0.1:9200/";
-var ES_URL = "https://mail.blky.eu/ze7eN/es/?csrf=${xsrftoken}";
-var APP = "new_book_search"; //export const ES_URL = "http://e530c:9200/";
-//export const APP = "new-book-search";
-//export const CRED = "vrTi58e8o:04540063-5d81-4fb1-9969-a52d29892995";
-//
+//import {ReactiveBase} from "@appbaseio/reactivesearch";
+//import React from "react";
+var ES_URL = "http://127.0.0.1:9200/"; //export const ES_URL = "http://e530c:9200/";
+//export const ES_URL = 'https://mail.blky.eu/ze7eN/es/';
+
+var APP = "new_book_search";
+var XSRF = {
+  'TODO': 'TODO'
+};
+var XSRF_HEADERS;
 
 /***/ }),
 
@@ -579,5 +596,5 @@ module.exports = __webpack_require__(/*! /home/west/git/ReactiveSearch/src/index
 
 /***/ })
 
-},[[0,"runtime-main",0]]]);
+},[[0,"runtime-main",1]]]);
 //# sourceMappingURL=main.chunk.js.map
