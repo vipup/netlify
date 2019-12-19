@@ -17,9 +17,6 @@ js/MARKOV_TRANSITION_MATRIX.1st.js
 
 /*
   Access-Control-Allow-Origin: *
-/templates/*
-  Access-Control-Allow-Origin: *
-
 # a path:
 /templates/index.html
   # headers for that path:
