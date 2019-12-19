@@ -23,23 +23,12 @@
 [[redirects]]
   from = "/404.html"
   to = "/index.html"
-
   status = 302
-
   force = true
-  query = {id = ":id"}
-  conditions = {Language = ["en"], Country = ["US"]}
-  signed = "API_SIGNATURE_TOKEN"
   [redirects.headers]
     X-From = "Netlify"
     X-Api-Key = "some-api-key-string"
 
-
-[headers]
-  for = "/index.html"
-  [headers.values]
-    Access-Control-Allow-Origin = "*"
-    HiThere = "fromNetply"
 [[headers]]
   for = "/*"
   [headers.values]
