@@ -1,3 +1,20 @@
+/0.chunk.js
+  Access-Control-Allow-Origin: *
+/1.js
+  Access-Control-Allow-Origin: *
+js/CDN_d3_V3_5_3_MODI.1st.js
+  Access-Control-Allow-Origin: *
+js/jquery341.1st.js
+  Access-Control-Allow-Origin: *
+js/MARKOV_CHAINRUNNER.1st.js
+  Access-Control-Allow-Origin: *
+js/MARKOV_NODES.1st.js
+  Access-Control-Allow-Origin: *
+js/MARKOV_TRANSITION_MATRIX.1st.js
+  Access-Control-Allow-Origin: *
+*
+##js/1.chunk.js  js/bundle.js  js/EMPTY_JS.1st.js            js/main.chunk.js     js/MARKOV_DIRGRAPH.1st.js     js/MARKOV_STORY.1st.js
+
 /*
   Access-Control-Allow-Origin: *
 # a path:
